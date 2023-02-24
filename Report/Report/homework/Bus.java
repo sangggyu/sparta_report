@@ -53,6 +53,8 @@ public class Bus extends transportation{
             System.out.println("요금은" + totalprice + "원 입니다.");
             System.out.println("현재 승객 수는 " + nowPassenger + "명 입니다.");
             System.out.println("잔여 좌석 수는 " + MaxPassenger + "석 입니다.");
+            super.nowPassenger = 0;
+            this.MaxPassenger = 30;
         } else if (passenger > MaxPassenger) {
             System.out.println("만석 입니다.");
             return;
@@ -69,6 +71,7 @@ public class Bus extends transportation{
             System.out.println("운행");
         } else {
             System.out.println("차고지행");
+
         }
     }
 

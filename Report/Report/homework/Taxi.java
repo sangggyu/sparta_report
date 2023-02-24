@@ -34,6 +34,8 @@ public class Taxi extends transportation {
         System.out.println("목적지 = " + destination); // 목적지
         System.out.println("목적지까지 거리 = " + distance + "km"); //목적지까지 거리
         System.out.println("지불할 요금 = " + price);
+        this.Passenger = 0;
+        this.maxPass = 4;
         totalprice += price;
     }
 
